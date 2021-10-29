@@ -29,12 +29,12 @@ According to Hadley Wickham, Tidy Data must satisfy three conditions below.
  - 2. Each observation forms a row.
  - 3. Each type of observational unit forms a table
 
-There are two main data tables, "dataAll" and "selectedGroupedSummary". "dataAll" is created in the process 1. of 3). run_analysis.R. in a way to satisfy the conditions of tidy data, consisting 10,299 rows and 563 columns. 10,299 rows are all observations of test and train measurement by each Subject and Activity. 563 columns consists of "Subject" and "Activity", and 561 measurements, e.g. "tBodyAccMagMean". Therefore, it is a tidy data.
+There are two main data tables, "dataAll" and "selectedGroupedSummary". "dataAll" is created in the process 1. of 3). run_analysis.R. in a way to satisfy the conditions of tidy data, consisting 10,299 rows and 563 columns. 10,299 rows are all observations of test and train measurement by each Subject and Activity. 563 columns consist of "Subject" and "Activity", and 561 measurements, e.g. "tBodyAcc-mean()-X". Therefore, it is "tidy".
 
-Final output "selectedGroupedSummary" is basically a subset of "dataAll", consisting 180 rows and 20 columns, and each average value was calculated along selected variables that contain -(mean) or -(std), grouped by "Subject" and "Activity, therefore, also, "tidy".
+Final output "selectedGroupedSummary" is basically a subset of "dataAll", consisting 180 rows and 20 columns, and each average value was calculated along selected variables that contain -(mean) or -(std), grouped by "Subject" and "Activity, therefore, it is also "tidy".
 
 5). Verification of the "selectedGroupedSummary"
 "selectedGroupedSummary.txt" file can be read into R with the code below.
-> read.table("selectedGroupedSummary.txt", header=TRUE)
+read.table("selectedGroupedSummary.txt", header=TRUE)
 
 (end of file)
