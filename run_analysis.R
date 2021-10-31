@@ -94,4 +94,4 @@ selectedGroupedSummary <- summarize(selectedGrouped,
 
 ## To View "selectedGroupedSummary" table and save it as a text file in the wd.
 View(selectedGroupedSummary)
-write.table(selectedGroupedSummary, "selectedGroupedSummary.txt")
+write.table(selectedGroupedSummary, "selectedGroupedSummary.txt", row.name = FALSE)
